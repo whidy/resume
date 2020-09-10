@@ -1,0 +1,7 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.root": "./dist"
+}
