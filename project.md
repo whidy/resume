@@ -132,7 +132,7 @@
 
 存放个人常用的快速搭建站点基础配置脚手架，未完善好的，很久没有维护了，未来可能保持更新。目前包含 `Vue-CLI 4` ， `Nuxt.js` ， `Next.js` 等相关。
 
-项目地址：<hhttps://github.com/whidy/my-cli>
+项目地址：<https://github.com/whidy/my-cli>
 
 ### lab-tools
 
