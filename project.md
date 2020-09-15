@@ -84,13 +84,13 @@
 
 新版的[个人博客](https://www.whidy.net)，还在不断优化和完善中。
 
-是一个全栈Web应用，前端部分用Gatsby.js框架，后端采用Strapi（开源Headless CMS），数据库采用PostgreSQL，运用GraphQL查询语言。
+是一个全栈Web应用，前端部分用 `Gatsby.js` 框架，后端采用 `Strapi` （开源Headless CMS），数据库采用 `PostgreSQL` ，运用 `GraphQL` 查询语言。
 
 ### BlazingLOG
 
 > 这是早期进行新博客创建的另一个方案
 
-基于 `Next.js` + `PostgreSQL` + `Docker` ，可视化数据库维护通过[Hasura](https://hasura.io/)，查询通过GraphQL。
+基于 `Next.js` + `PostgreSQL` + `Docker` ，可视化数据库维护通过[Hasura](https://hasura.io/)，查询通过 `GraphQL` 。
 
 项目地址：<https://github.com/whidy/BlazingLOG>
 
@@ -102,19 +102,19 @@
 
 ### postcss-study
 
-17年学习PostCSS写的一系列教程（笔记）分享。目前已暂停更新。
+17年学习 `PostCSS` 写的一系列教程（笔记）分享。目前已暂停更新。
 
 项目地址：<https://github.com/whidy/postcss-study>
 
 ### grab-web
 
-基于Egg.js的一个Web应用，实现Web端上传文件，后端查询数据并返回查询结果和批量查询的日志记录。
+基于 `Egg.js` 的一个Web应用，实现Web端上传文件，后端查询数据并返回查询结果和批量查询的日志记录。
 
 后端服务使用Node.js服务端**处理文件**，并集成若干**代理服务器**在服务层模发送查询请求，防止被封IP，部分查询接口还需要进行**图形验证码**验证通过（采用*百度OCR*接口）查询。
 
 技术栈： `Egg.js` 、 `mongoDB` 、 `Redis` 、文件读取、批量任务队列、日志记录等
 
-> 研究图形验证码的过程中，稍有研究Python相关的机器学习方面知识，因为模型实现等多方面困难最终放弃。
+> 研究图形验证码的过程中，稍有研究 `Python` 相关的机器学习方面知识，因为模型实现等多方面困难最终放弃。
 
 ### mobileweb
 
@@ -144,7 +144,7 @@
 * [网页用户行为记录及回放](https://github.com/whidy/lab-tools/tree/master/rrweb)
 * ...（等等）
 
-技术栈包括： `hapi` （Node.js框架）、 `Koa.js` 、 `GitBook` 、 `Canvas` 等。
+技术栈包括： `hapi` 、 `Koa.js` 、 `GitBook` 、 `Canvas` 等。
 
 项目地址：<https://github.com/whidy/lab-tools>
 
@@ -154,6 +154,8 @@
 
 项目地址：<https://github.com/whidy/api-json-server>
 
+> 当然大家熟知的Mock.js和这个能力类似，不再重复。
+
 ### a-new-project-needs
 
 做一个项目需要用到各种基础配置，完善中。
@@ -162,7 +164,7 @@
 
 ### wordpress-to-gatsby
 
-之前做Wordpress博客迁移到Gatsby做的一些研究
+之前做 `Wordpress` 博客迁移到 `Gatsby` 做的一些研究
 
 项目地址：<https://github.com/whidy/wordpress-to-gatsby>
 
