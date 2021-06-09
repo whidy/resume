@@ -185,7 +185,7 @@
 * Webpack、Gulp
 * MySQL、RESTful
 * VSCode、Git、Fiddler、Charles
-* Windows、Macos
+* Windows、macOS
 
 ### 了解并实践的技术栈包括
 
