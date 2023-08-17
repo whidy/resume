@@ -1,13 +1,14 @@
 # 个人简历
 
-用于web展示的个人简历
+用于web展示的个人简历的脚手架。还没设计好。
 
 ## 特性
 
-* webpack4
-* postcss
-* tailwindcss
+* webpack5
+* postcss8
+* tailwindcss3
 * purgeCSS
+* ...
 
 ## 使用
 

@@ -1,8 +1,7 @@
 const path = require('path')
 const glob = require('glob')
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const PurgecssPlugin = require('purgecss-webpack-plugin')
 const isDev = process.env.NODE_ENV === "development";
 
 const PATHS = {
@@ -49,9 +48,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
-    new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
-    }),
   ],
   optimization: {
     splitChunks: {
@@ -66,7 +62,8 @@ module.exports = {
     },
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'dist'),
+    watchFiles: ["src/*.html"],
     compress: true,
     port: 9000,
   },
