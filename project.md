@@ -1,18 +1,45 @@
 # 我的项目
 
-> 项目存放于Macbook Pro上，用于记录本地有需要或者有用的项目说明
+包括工作和个人项目，大大小小预计70+的项目工程。
 
-## 工作项目
+## 2025
 
-> 项目过多，这里仅列举几个稍具代表性项目，因公司项目，无开源代码，以下项目均由我独立开发或对团队指导开发，所有项目均包含管理端，因实现技术难度不大就不提了。
+* [知岛文库](https://www.jhxq.top/)
+* [进化猩球](http://course.jhxq.top:81/)
+* [对TA说](https://www.duitashuo.love/)
 
-项目主要围绕以下几个产品：
+## 2021-2024
 
-* [要啦资讯站](https://www.51.la/)
-* [要啦网站统计](https://web.51.la/)
-* [要啦短网址](https://dwz.51.la/)
-* [要啦小程序统计](https://mpa.51.la/)
-* 粤开财富小程序（微信搜索**粤开财富**）
+* [BD-aPaaS（一站式微服务治理运营平台）](https://apaas5.wodcloud.com/apaas/portal/ui/#/)
+* ~~SMS接码平台~~
+* UOS-CI/CD报告（内部工具uos-report）
+* 信息化系统（内部工具ia_vue）
+
+## 2017-2020
+
+* [要啦资讯站（PC、H5、Admin）](https://www.51.la/)
+* [要啦网站统计（PC、H5、微信小程序）](https://web.51.la/)
+* 要啦网站统计专业版（PC）内部使用、支持热力图、事件分析
+* 要啦网站统计SDK开发
+* ~~可视化平台项目(visualization)~~
+* ~~要啦联运平台~~
+* ~~万花筒(Lighting)（PC、Admin）~~（低代码平台，用作内部运营页面的快速构建工具。已下线）
+* ~~[要啦短网址（PC、H5、Admin）](https://dwz.51.la/)~~
+* ~~[要啦小程序统计（PC、Admin）](https://mpa.51.la/)~~
+* ~~粤开财富小程序（微信搜索**粤开财富**）~~
+* 万丈1加运动（微信小程序搜索）
+
+## 2014-2016
+
+* [太平洋电脑网](https://www.whidy.cn/ByePCGROUPYears.html)
+
+......
+
+## 2005
+
+* [高三的日子](https://www.whidy.cn/demos/memory/)
+
+## 主要项目简单介绍
 
 ### 要啦资讯站
 
@@ -24,7 +51,7 @@
 
 该工具实现了由本地部署的Web应用，以我们的域名，例如 `https://lab.51.la/mp` 来访问到 `https://mp.weixin.qq.com/` 页面主体，并登录自己的微信账号后进入产品工具首页。该工具通过部分微信公众号接口，来实现公众号文章的查询搜索等能力。
 
-目前已部署至个人服务器：<https://demo.whidy.net>，欢迎体验。
+目前已部署至个人服务器：[https://demo.whidy.net](https://demo.whidy.net)，欢迎体验。
 
 ### 要啦网站统计
 
@@ -94,19 +121,19 @@
 
 基于 `Next.js` + `PostgreSQL` + `Docker` ，可视化数据库维护通过[Hasura](https://hasura.io/)，查询通过 `GraphQL` 。
 
-项目地址：<https://github.com/whidy/BlazingLOG>
+项目地址：[https://github.com/whidy/BlazingLOG](https://github.com/whidy/BlazingLOG)
 
 ### daily
 
-这是一个基于 `Hugo` 的建立在Github上的一个博客，也是我所有博客之一，访问地址<https://whidy.github.io/>，不过后来比较少更新了，大部分数据和 `SegmentFault` 的[个人主页](https://segmentfault.com/u/whidy)信息一致，未来博客内容均在主站[WhidyWrites](https://www.whidy.net/)发布。
+这是一个基于 `Hugo` 的建立在Github上的一个博客，也是我所有博客之一，访问地址[https://whidy.github.io/](https://whidy.github.io/)，不过后来比较少更新了，大部分数据和 `SegmentFault` 的[个人主页](https://segmentfault.com/u/whidy)信息一致，未来博客内容均在主站[WhidyWrites](https://www.whidy.net/)发布。
 
-项目地址：<https://github.com/whidy/daily>
+项目地址：[https://github.com/whidy/daily](https://github.com/whidy/daily)
 
 ### postcss-study
 
 17年学习 `PostCSS` 写的一系列教程（笔记）分享。目前已暂停更新。
 
-项目地址：<https://github.com/whidy/postcss-study>
+项目地址：[https://github.com/whidy/postcss-study](https://github.com/whidy/postcss-study)
 
 ### grab-web
 
@@ -122,19 +149,19 @@
 
 基于 `Webpack4` + `postcss` 来解决移动端适配问题，主要采用 `rem` 单位解决，另有一个分支，采用 `vw` 单位解决方案。
 
-项目地址：<https://github.com/whidy/mobileweb>
+项目地址：[https://github.com/whidy/mobileweb](https://github.com/whidy/mobileweb)
 
 ### coding-style-rules
 
 基于 `Vue-CLI4.x` 的项目开发脚手架，主要在于完善了ESLint配置，规范化代码，以降低团队协作开发过程中出现的各种规范不统一问题。*现已从公司内部Git仓迁移至Github。*
 
-项目地址：<https://github.com/whidy/coding-style-rules>
+项目地址：[https://github.com/whidy/coding-style-rules](https://github.com/whidy/coding-style-rules)
 
 ### my-cli
 
 存放个人常用的快速搭建站点基础配置脚手架，未完善好的，很久没有维护了，未来可能保持更新。目前包含 `Vue-CLI 4` ， `Nuxt.js` ， `Next.js` 等相关。
 
-项目地址：<https://github.com/whidy/my-cli>
+项目地址：[https://github.com/whidy/my-cli](https://github.com/whidy/my-cli)
 
 ### lab-tools
 
@@ -148,13 +175,13 @@
 
 技术栈包括： `hapi` 、 `Koa.js` 、 `GitBook` 、 `Canvas` 等。
 
-项目地址：<https://github.com/whidy/lab-tools>
+项目地址：[https://github.com/whidy/lab-tools](https://github.com/whidy/lab-tools)
 
 ### api-json-server
 
 自建的一个 `Mock` 数据临时测试仓库工具，主要基于[faker.js](https://github.com/Marak/faker.js)
 
-项目地址：<https://github.com/whidy/api-json-server>
+项目地址：[https://github.com/whidy/api-json-server](https://github.com/whidy/api-json-server)
 
 > 当然大家熟知的Mock.js和这个能力类似，不再重复。
 
@@ -162,13 +189,13 @@
 
 做一个项目需要用到各种基础配置，完善中。
 
-项目地址：<https://github.com/whidy/a-new-project-needs>
+项目地址：[https://github.com/whidy/a-new-project-needs](https://github.com/whidy/a-new-project-needs)
 
 ### wordpress-to-gatsby
 
 之前做 `Wordpress` 博客迁移到 `Gatsby` 做的一些研究
 
-项目地址：<https://github.com/whidy/wordpress-to-gatsby>
+项目地址：[https://github.com/whidy/wordpress-to-gatsby](https://github.com/whidy/wordpress-to-gatsby)
 
 ## 补充
 
@@ -178,18 +205,19 @@
 
 ### 主要技术能力总结如下
 
-* jQuery、Vue.js、Nuxt.js、Koa.js、Egg.js、微信小程序
-* Nunjucks、Art-Template、JSTL
-* SASS、PostCSS
-* Bootstrap、TailwindCSS
-* Webpack、Gulp
+* Vue.js、Nuxt.js、Koa.js、Egg.js、微信小程序、jQuery
+* Nunjucks、Art-Template、JSTL、JSX
+* Element-UI、Element-Plus、Vant.js
+* TailwindCSS、UnoCSS、Bootstrap
+* SASS、PostCSS、Sytle in JS
+* Vite.js、Vue-CLI、Webpack、Gulp
 * MySQL、RESTful
 * VSCode、Git、Fiddler、Charles
-* Windows、macOS
+* macOS、Windows、Linux（CentOS、UOS）
 
 ### 了解并实践的技术栈包括
 
-* Wordpress、React.js、Next.js、Gatsby.js、Express.js、Jekyll
+* Gatsby.js、Express.js、React.js、Next.js、Wordpress、Jekyll
 * Strapi、Hasura
 * Redis、MongoDB、PostgreSQL、GraphQL
 * HTTP、Nginx、云存储（OBS、COS等）、CDN配置及开发
@@ -203,14 +231,14 @@
 
 ### 其他技能
 
-* 兴趣驱使，热衷开发
-* 做笔记和分享习惯，良好Markdown书写能力
-* 严格的开发规范和团队协作能力
+* 兴趣驱使，热衷探索
+* 勤于笔记、分享习惯
+* Markdown、PlantUML
+* 严谨的开发规范和团队协作能力
 * 较好的英文阅读能力
-* 博客：<https://www.whidy.net>和<https://www.whidy.cn>
-* SegmentFault：<https://segmentfault.com/u/whidy>
-* Github：<https://github.com/whidy>
-* StackOverflow：<https://stackoverflow.com/users/3089701/whidy>
-* Medium：<https://medium.com/@bs1988>
+* 博客：[https://www.whidy.net](https://www.whidy.net)
+* SegmentFault：[https://segmentfault.com/u/whidy](https://segmentfault.com/u/whidy)
+* Github：[https://github.com/whidy](https://github.com/whidy)
+* StackOverflow：[https://stackoverflow.com/users/3089701/whidy](https://stackoverflow.com/users/3089701/whidy)
 
 > 各种UI组件库、各种常用的CLI工具这里省略。
