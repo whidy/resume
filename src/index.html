@@ -1,20 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>个人简历</title>
+  <title>白舜 - Web前端开发工程师</title>
+  <meta name="description" content="白舜(whidy) - 15年Web开发经验的资深前端工程师">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div class="py-12">
-    <header class="my-10 text-6xl text-center font-extrabold">
-      <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">111</span>
-      <!-- <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">个人简历</span> -->
+<body class="bg-gray-50 font-sans text-gray-800 print:bg-white<% if (htmlWebpackPlugin.options.templateParameters.isPDF) { %> print<% } %>">
+  <div class="max-w-4xl mx-auto bg-white shadow-lg print:shadow-none print:max-w-none">
+    
+    <!-- Header Section -->
+    <header class="relative bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-12 print:py-8">
+      <div class="animate-fade-in">
+        <h1 class="text-4xl font-bold mb-2 print:text-3xl">张三 (zhangsan)</h1>
+        <p class="text-xl mb-6 text-blue-100 print:text-base">Web前端开发工程师 · 8年经验</p>
+        
+        <div class="flex flex-wrap gap-6 text-sm print:gap-4">
+          <div class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            <span>138****8888</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            <span>example@example.com</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="user" class="w-4 h-4"></i>
+            <span>30岁 · 男 · 本科</span>
+          </div>
+        </div>
+      </div>
     </header>
-    <p class="text-3xl text-center text-gray-600">aa2</p>
+
+    <div class="px-8 py-8 print:py-4">
+      
+      <!-- Self Description -->
+      <section class="mb-8 animate-slide-up print:mb-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800 border-b-2 border-blue-500 pb-2 print:text-xl">自我描述</h2>
+        <p class="text-gray-700 leading-relaxed print:text-sm">
+          专注Web开发领域多年，具备丰富的项目开发经验，有着严格的开发规范准则，在计算机领域涉猎广泛，创新及实践能力突出，善于攻克各类技术难题和前端架构设计；有产品思维，UE/UX优化能力；同时具备技术团队管理能力，擅长部门协调及推进，团队正向影响力。<br>
+          <strong class="text-blue-600">热情、专注、精益求精！</strong>
+        </p>
+      </section>
+
+      <!-- Technical Skills -->
+      <section class="mb-8 animate-slide-up print:mb-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800 border-b-2 border-blue-500 pb-2 print:text-xl">专业技能</h2>
+        
+        <div class="mb-6">
+          <h3 class="text-lg font-medium mb-3 text-gray-800 print:text-base">主要技术栈</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 print:grid-cols-1">
+            <div class="bg-gray-50 p-4 rounded-lg print:bg-transparent print:p-2">
+              <h4 class="font-medium text-gray-800 mb-2 flex items-center gap-2">
+                <i data-lucide="code" class="w-4 h-4 text-orange-500"></i>
+                前端技术
+              </h4>
+              <div class="flex flex-wrap gap-2 text-sm">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">TailwindCSS</span>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-lg print:bg-transparent print:p-2">
+              <h4 class="font-medium text-gray-800 mb-2 flex items-center gap-2">
+                <i data-lucide="server" class="w-4 h-4 text-green-500"></i>
+                后端 & 工具
+              </h4>
+              <div class="flex flex-wrap gap-2 text-sm">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Webpack</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">微信小程序</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-medium mb-2 text-gray-800 print:text-base">其他了解</h3>
+          <p class="text-gray-600 text-sm">TypeScript、Gatsby.js、Nuxt.js、Redis、CI/CD、Kubernetes、AWS等</p>
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section class="mb-8 animate-slide-up print:mb-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800 border-b-2 border-blue-500 pb-2 print:text-xl">工作经历</h2>
+        
+        <div class="space-y-6 print:space-y-4">
+          <!-- Job 1 -->
+          <div class="bg-white border-l-4 border-blue-500 pl-6 py-4 print:border-l-2 print:pl-4">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+              <h3 class="text-lg font-semibold text-gray-800 print:text-base">北京比格大数据有限公司</h3>
+              <span class="text-sm text-gray-500 print:text-xs">2022.10 – 2024.09</span>
+            </div>
+            <p class="text-blue-600 font-medium mb-2 print:text-sm">Web前端开发工程师</p>
+            <p class="text-gray-700 text-sm mb-2 print:text-xs">
+              负责公司自研的核心产品aPaaS平台，基础架构的搭建、维护及衍生项目的开发。主要使用Vue.js 3.x、Element-Plus、Vue-Router、Vuex、ECharts等技术栈。
+            </p>
+            <p class="text-gray-600 text-xs print:text-xs">
+              主要围绕业务需求展开，完成复杂的表单及交互开发工作，并保证较高的质量。
+            </p>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="bg-white border-l-4 border-blue-500 pl-6 py-4 print:border-l-2 print:pl-4">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+              <h3 class="text-lg font-semibold text-gray-800 print:text-base">统信软件技术有限公司</h3>
+              <span class="text-sm text-gray-500 print:text-xs">2021.04 – 2022.06</span>
+            </div>
+            <p class="text-blue-600 font-medium mb-2 print:text-sm">高级Web前端开发工程师</p>
+            <p class="text-gray-700 text-sm mb-2 print:text-xs">
+              负责UOS操作系统开发及生产过程中所需的工具及流程转换为Web图形化界面操作，主导Web开发流程和规范化管理。
+            </p>
+            <p class="text-gray-600 text-xs print:text-xs">
+              主要项目：项目管理平台CRP、仓库管理平台APTLY、自动化工作流平台AUTO-CI等
+            </p>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="bg-white border-l-4 border-blue-500 pl-6 py-4 print:border-l-2 print:pl-4">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+              <h3 class="text-lg font-semibold text-gray-800 print:text-base">广东万丈金数信息技术股份有限公司</h3>
+              <span class="text-sm text-gray-500 print:text-xs">2017.05 – 2020.12</span>
+            </div>
+            <p class="text-blue-600 font-medium mb-2 print:text-sm">Web前端开发工程师 (前端组长)</p>
+            <p class="text-gray-700 text-sm mb-2 print:text-xs">
+              负责项目评审、需求评估、开发排期规划，技术选型、项目搭建及开发维护等工作。兼任公司前端技术团队领导（约15人）。
+            </p>
+            <p class="text-gray-600 text-xs print:text-xs">
+              主要项目：51LA资讯站、51LA网站统计、51LA小程序统计、51LA短链分发及相关SDK开发
+            </p>
+          </div>
+
+          <!-- Job 4 -->
+          <div class="bg-white border-l-4 border-blue-500 pl-6 py-4 print:border-l-2 print:pl-4">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+              <h3 class="text-lg font-semibold text-gray-800 print:text-base">太平洋网络</h3>
+              <span class="text-sm text-gray-500 print:text-xs">2014.02 - 2017.02</span>
+            </div>
+            <p class="text-blue-600 font-medium mb-2 print:text-sm">Web前端开发工程师</p>
+            <p class="text-gray-700 text-sm print:text-xs">
+              负责PC端和移动端页面开发及维护，包括太平洋电脑网、穿戴数码频道等，主要技术栈jQuery、JSTL、HTML5。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Projects -->
+      <section class="mb-8 animate-slide-up print:mb-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800 border-b-2 border-blue-500 pb-2 print:text-xl">核心项目经验</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 print:grid-cols-1 print:gap-4">
+          <div class="bg-gray-50 rounded-lg p-6 print:bg-transparent print:p-4 print:border print:border-gray-200">
+            <h3 class="text-lg font-semibold mb-2 text-gray-800 print:text-base">51LA网站统计</h3>
+            <p class="text-sm text-gray-600 mb-3 print:text-xs">Egg.js + Redis + Webpack</p>
+            <ul class="text-sm text-gray-700 space-y-1 print:text-xs">
+              <li>• 服务2千万站点，日统计20亿PV</li>
+              <li>• 日活用户约5000人</li>
+              <li>• 自研热力图功能和算法</li>
+              <li>• PostCSS技术移动端适配</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6 print:bg-transparent print:p-4 print:border print:border-gray-200">
+            <h3 class="text-lg font-semibold mb-2 text-gray-800 print:text-base">51LA资讯站</h3>
+            <p class="text-sm text-gray-600 mb-3 print:text-xs">Nuxt.js + Redis</p>
+            <ul class="text-sm text-gray-700 space-y-1 print:text-xs">
+              <li>• 服务端渲染，SEO优化</li>
+              <li>• 图片懒加载，性能优化</li>
+              <li>• 独立完成技术选型和开发</li>
+              <li>• 高响应速度和稳定性</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6 print:bg-transparent print:p-4 print:border print:border-gray-200">
+            <h3 class="text-lg font-semibold mb-2 text-gray-800 print:text-base">CI/CD看板</h3>
+            <p class="text-sm text-gray-600 mb-3 print:text-xs">Vite + Vue 3 + ECharts</p>
+            <ul class="text-sm text-gray-700 space-y-1 print:text-xs">
+              <li>• 大屏数据展示平台</li>
+              <li>• 项目状态、代码统计可视化</li>
+              <li>• 独立完成设计和开发</li>
+              <li>• 协助决策层数据分析</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg p-6 print:bg-transparent print:p-4 print:border print:border-gray-200">
+            <h3 class="text-lg font-semibold mb-2 text-gray-800 print:text-base">51LA小程序统计</h3>
+            <p class="text-sm text-gray-600 mb-3 print:text-xs">Egg.js + Vue 2 + Gulp</p>
+            <ul class="text-sm text-gray-700 space-y-1 print:text-xs">
+              <li>• 微信小程序数据分析工具</li>
+              <li>• 服务端渲染Web应用</li>
+              <li>• 小程序生命周期深入理解</li>
+              <li>• SDK开发和数据上报</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="mb-8 animate-slide-up print:mb-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800 border-b-2 border-blue-500 pb-2 print:text-xl">教育经历</h2>
+        <div class="space-y-3 print:space-y-2">
+          <div class="flex flex-col md:flex-row md:justify-between">
+            <div>
+              <h3 class="font-medium text-gray-800 print:text-sm">湖北工业大学</h3>
+              <p class="text-sm text-gray-600 print:text-xs">本科 / 计算机科学与技术</p>
+            </div>
+            <span class="text-sm text-gray-500 print:text-xs">2007.09 - 2009.12</span>
+          </div>
+          <div class="flex flex-col md:flex-row md:justify-between">
+            <div>
+              <h3 class="font-medium text-gray-800 print:text-sm">武汉东湖学院</h3>
+              <p class="text-sm text-gray-600 print:text-xs">大专 / 计算机网络技术</p>
+            </div>
+            <span class="text-sm text-gray-500 print:text-xs">2006.09 - 2009.06</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Links & Additional Info -->
+      <section class="animate-slide-up print:mb-4">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800 border-b-2 border-blue-500 pb-2 print:text-xl">联系方式 & 其他</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 print:grid-cols-4 print:gap-2 print:mb-4">
+          <a href="#" class="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors print:text-black print:text-xs">
+            <i data-lucide="github" class="w-4 h-4"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="#" class="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors print:text-black print:text-xs">
+            <i data-lucide="globe" class="w-4 h-4"></i>
+            <span>个人博客</span>
+          </a>
+          <a href="#" class="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors print:text-black print:text-xs">
+            <i data-lucide="code" class="w-4 h-4"></i>
+            <span>SegmentFault</span>
+          </a>
+          <a href="#" class="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors print:text-black print:text-xs">
+            <i data-lucide="help-circle" class="w-4 h-4"></i>
+            <span>StackOverflow</span>
+          </a>
+        </div>
+
+        <div class="text-sm text-gray-600 space-y-2 print:text-xs">
+          <p>✨ <strong>开发环境：</strong>主要使用 macOS + VSCode/Cursor，熟练使用各类开发工具</p>
+          <p>🔍 <strong>学习能力：</strong>善用 Google、StackOverflow、GitHub，关注技术前沿</p>
+          <p>🤖 <strong>AI工具：</strong>熟练使用 ChatGPT 等AI工具提升开发效率</p>
+          <p>📝 <strong>软技能：</strong>优秀的文档编写能力，良好的英文阅读能力</p>
+          <p>🎯 <strong>近期兴趣：</strong>PVE、NAS、AI工具研究</p>
+        </div>
+
+        <div class="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500 print:bg-transparent print:border print:mt-4">
+          <p class="text-sm text-gray-700 print:text-xs">
+            <strong>感谢您认真阅读本人简历！</strong>期待有机会与贵司携手合作，在互相学习和追求卓越的过程中，共创公司和个人的双赢佳绩。
+          </p>
+        </div>
+      </section>
+
+    </div>
   </div>
+
+  <!-- Print styles -->
+  <style>
+    @media print {
+      @page {
+        margin: 0.8cm;
+        size: A4;
+      }
+      
+      * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      
+      .print\\:shadow-none { box-shadow: none !important; }
+      .print\\:max-w-none { max-width: none !important; }
+      .print\\:bg-white { background-color: white !important; }
+      .print\\:bg-transparent { background-color: transparent !important; }
+      .print\\:text-black { color: black !important; }
+      .print\\:border { border: 1px solid #e5e7eb !important; }
+      .print\\:border-gray-200 { border-color: #e5e7eb !important; }
+      .print\\:border-l-2 { border-left-width: 2px !important; }
+      .print\\:grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+      .print\\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+      .print\\:gap-2 { gap: 0.5rem !important; }
+      .print\\:gap-4 { gap: 1rem !important; }
+      .print\\:space-y-2 > * + * { margin-top: 0.5rem !important; }
+      .print\\:space-y-4 > * + * { margin-top: 1rem !important; }
+      .print\\:py-8 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+      .print\\:py-4 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+      .print\\:p-4 { padding: 1rem !important; }
+      .print\\:p-2 { padding: 0.5rem !important; }
+      .print\\:pl-4 { padding-left: 1rem !important; }
+      .print\\:mb-6 { margin-bottom: 1.5rem !important; }
+      .print\\:mb-4 { margin-bottom: 1rem !important; }
+      .print\\:mt-4 { margin-top: 1rem !important; }
+      .print\\:text-3xl { font-size: 1.875rem !important; line-height: 2.25rem !important; }
+      .print\\:text-xl { font-size: 1.25rem !important; line-height: 1.75rem !important; }
+      .print\\:text-base { font-size: 1rem !important; line-height: 1.5rem !important; }
+      .print\\:text-sm { font-size: 0.875rem !important; line-height: 1.25rem !important; }
+      .print\\:text-xs { font-size: 0.75rem !important; line-height: 1rem !important; }
+    }
+
+    .tech-tag {
+      display: inline-block;
+      background-color: #dbeafe;
+      color: #1e40af;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.75rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .tech-tag:hover {
+      background-color: #bfdbfe;
+      transform: translateY(-1px);
+    }
+
+    .print .tech-tag {
+      background-color: transparent !important;
+      color: black !important;
+      border: 1px solid #ccc !important;
+    }
+  </style>
 </body>
 
 </html>

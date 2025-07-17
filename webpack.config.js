@@ -1,8 +1,9 @@
 const path = require('path')
-const glob = require('glob')
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TemplateProcessorPlugin = require("./scripts/template-processor-plugin");
 const isDev = process.env.NODE_ENV === "development";
+const isPDF = process.env.PDF_VERSION === "true";
 
 const PATHS = {
   src: path.join(__dirname, 'src')
@@ -44,10 +45,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      templateParameters: {
+        isPDF: isPDF
+      }
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
+    new TemplateProcessorPlugin(),
   ],
   optimization: {
     splitChunks: {

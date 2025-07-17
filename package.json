@@ -1,38 +1,45 @@
 {
   "name": "resume",
-  "version": "1.0.0",
-  "description": "a web resume",
+  "version": "2.0.0",
+  "description": "白舜的个人在线简历",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --open",
-    "build": "cross-env NODE_ENV=production webpack"
+    "dev": "npm run start",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build:pdf": "cross-env NODE_ENV=production PDF_VERSION=true webpack",
+    "build:inline": "cross-env NODE_ENV=production webpack && node scripts/create-inline.js",
+    "inline": "npm run build:inline",
+    "pdf": "npm run build:pdf && node scripts/generate-pdf.js"
   },
   "keywords": [
     "resume",
-    "my",
-    "resume",
-    "web",
-    "resume"
+    "portfolio",
+    "frontend",
+    "developer",
+    "whidy"
   ],
   "author": "whidy",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.4.0",
+    "lucide": "^0.400.0",
+    "simple-icons": "^11.0.0"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0",
-    "autoprefixer": "^10.2.6",
-    "cross-env": "^7.0.2",
+    "autoprefixer": "^10.4.16",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
-    "cssnano": "^6.0.1",
-    "html-webpack-plugin": "^5.3.1",
+    "cssnano": "^6.0.3",
+    "html-webpack-plugin": "^5.6.0",
+    "html-webpack-inline-source-plugin": "^1.0.0-beta.2",
     "mini-css-extract-plugin": "^2.7.6",
-    "postcss": "^8.3.0",
+    "postcss": "^8.4.32",
     "postcss-loader": "^7.3.3",
-    "purgecss-webpack-plugin": "^5.0.0",
+    "puppeteer": "^21.0.0",
     "style-loader": "^3.3.3",
-    "webpack": "^5.38.1",
+    "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   }

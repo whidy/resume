@@ -1,0 +1,81 @@
+{
+  "personalInfo": {
+    "name": "张三",
+    "englishName": "zhangsan",
+    "title": "Web前端开发工程师",
+    "experience": "8年经验",
+    "age": 30,
+    "gender": "男",
+    "education": "本科",
+    "phone": "138****8888",
+    "email": "example@example.com"
+  },
+  "selfDescription": "专注Web开发领域多年，具备丰富的项目开发经验，有着严格的开发规范准则，在计算机领域涉猎广泛，创新及实践能力突出，善于攻克各类技术难题和前端架构设计；有产品思维，UE/UX优化能力；同时具备技术团队管理能力，擅长部门协调及推进，团队正向影响力。\\n<strong class=\"text-blue-600\">热情、专注、精益求精！</strong>",
+  "skills": {
+    "frontend": ["HTML5", "CSS3", "JavaScript", "Vue.js", "React.js", "TailwindCSS"],
+    "backend": ["Node.js", "Express.js", "Python", "MySQL", "MongoDB"],
+    "tools": ["Webpack", "Vite", "Git", "Docker", "微信小程序"]
+  },
+  "workExperience": [
+    {
+      "company": "某科技有限公司",
+      "position": "高级前端开发工程师",
+      "duration": "2022.01 – 至今",
+      "description": "负责公司核心产品的前端架构设计和开发，主要使用Vue.js 3.x、TypeScript等技术栈。",
+      "achievements": "完成多个重要项目的技术选型和开发工作。"
+    },
+    {
+      "company": "某互联网公司",
+      "position": "前端开发工程师",
+      "duration": "2019.06 – 2021.12",
+      "description": "负责Web应用开发及维护，参与产品架构设计和技术方案制定。",
+      "achievements": "主导团队前端技术栈升级，提升开发效率30%。"
+    }
+  ],
+  "projects": [
+    {
+      "name": "某管理系统",
+      "tech": "Vue 3 + TypeScript + Vite",
+      "description": "企业级后台管理系统，支持多租户架构。",
+      "achievements": [
+        "支持10万+用户同时在线",
+        "响应时间优化至500ms以内",
+        "模块化架构，易于扩展",
+        "完整的权限管理体系"
+      ]
+    },
+    {
+      "name": "某电商平台",
+      "tech": "React + Next.js + TypeScript",
+      "description": "面向C端的电商购物平台。",
+      "achievements": [
+        "日均PV超过100万",
+        "移动端适配完美",
+        "SEO优化，搜索排名前列",
+        "购物体验流畅顺滑"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "某某大学",
+      "degree": "本科",
+      "major": "计算机科学与技术",
+      "duration": "2015.09 - 2019.06"
+    }
+  ],
+  "links": {
+    "github": "https://github.com/example",
+    "blog": "https://blog.example.com",
+    "segmentfault": "https://segmentfault.com/u/example",
+    "stackoverflow": "https://stackoverflow.com/users/example"
+  },
+  "additionalInfo": [
+    "💻 <strong>开发环境：</strong>主要使用 macOS + VSCode，熟练使用各类开发工具",
+    "🔍 <strong>学习能力：</strong>善用 Google、StackOverflow、GitHub，关注技术前沿",
+    "🤖 <strong>AI工具：</strong>熟练使用 ChatGPT 等AI工具提升开发效率",
+    "📝 <strong>软技能：</strong>优秀的文档编写能力，良好的英文阅读能力",
+    "🎯 <strong>近期兴趣：</strong>云原生、微前端、AI应用开发"
+  ],
+  "footer": "感谢您认真阅读本人简历！期待有机会与贵司携手合作，在互相学习和追求卓越的过程中，共创公司和个人的双赢佳绩。"
+}
